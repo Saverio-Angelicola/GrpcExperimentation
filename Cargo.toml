@@ -9,7 +9,8 @@ tokio = { version = "1", features = ["full"] }
 tower = { version = "0.5.1", features = ["full"] }
 prost = "0.14.1"
 tonic-prost = "0.14"
-tonic-reflection = "0.14.0"
+tonic-reflection = "0.14"
+tonic-health = "0.14"
 rustls = "0.23.35"
 
 [build-dependencies]
