@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package experimentation;
+
+service Experimentation{
+  rpc test(ExpRequest) returns (ExpResponse);
+}
+
+message ExpRequest {
+  string msg = 1;
+}
+
+message ExpResponse {
+  string res = 1;
+}

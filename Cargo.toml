@@ -4,12 +4,13 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-tonic = "0.14"
+tonic = { version = "0.14", features = ["_tls-any"] }
 tokio = { version = "1", features = ["full"] }
+tower = { version = "0.5.1", features = ["full"] }
 prost = "0.14.1"
 tonic-prost = "0.14"
 tonic-reflection = "0.14.0"
+rustls = "0.23.35"
 
 [build-dependencies]
 tonic-prost-build = "0.14"
-tonic-build = "0.14.2"
